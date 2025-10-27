@@ -17,7 +17,15 @@ Data Engineering, Artificial Intelligence, Cybersecurity, Healthcare Analytics, 
 
 4. Launch notebook: jupyter notebook RAG_Demo-venv.ipynb
 
+## Chunking Result:
+Tested two configurations:
+- 400/50 produced 649 small chunks (more granular but fragmented answers)
+- 1200/200 produced 245 larger chunks (fewer but richer in context)
 
+✅ I chose 1200/200 because it gave more coherent and complete answers for conceptual questions.
+
+## Improved retriever parameters
+Retrieval: k=5, fetch_k=10, lambda_mult=0.3
 
 ## Test questions used:
 1. What are the common steps in an ETL data pipeline?
